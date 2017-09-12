@@ -13,7 +13,7 @@ sc = SparkContext(conf = conf)
 # tsv stands for tab-separated values
 # Split tsv document into a Python list of tab-delimited fields
 # Extract field 3, containing the actual text, and split it into a list of words  
-rawData = sc.textFile("C:\MachineLearningFrankKane\DataScience\subset-small.tsv")
+rawData = sc.textFile("C:\MachineLearningShaunZia\DataScience\subset-small.tsv")
 fields = rawData.map(lambda x: x.split("\t"))
 documents = fields.map(lambda x: x[3].split(" "))
 
